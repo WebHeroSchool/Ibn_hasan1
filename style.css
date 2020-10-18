@@ -5,7 +5,7 @@ h1 {
   font-family:'pt_serif', sans-serif;
 }
 header {
-  padding: 40px 0 40px 0;
+  padding: 25px 0 25px 0;
   display: flex;justify-content: space-between;
   margin-bottom: 100px;
 }
@@ -82,9 +82,13 @@ header {
 .main {
   padding:0 60% 220px 0;
   background:top right no-repeat url(img/Frame.svg);
+  float: right;
 }
 .main__title {
-margin-bottom:40px;
+  font-size: 40px;
+  width: 350px;
+  margin-bottom:40px;
+
 }
 .main__subtitle {
   margin-bottom: 41px;
