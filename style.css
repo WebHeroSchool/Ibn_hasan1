@@ -1,49 +1,67 @@
-body {
-  background: #330099;
-  color: #fff;
-  font-family: montserrat;
-  text-align: center;
+@keyframes Hello {
+  to {
+    color: blue;
+  }
 }
-
-.title {
-  font-size: 18px;
-}
-
-.subtitle {
-  font-size: 16px;
-  font-weight: 200;
-}
-
-.wrapper  {
-  position: relative;
-  margin: 0 auto 100px;
-  height: 50px;
-  width: 80%;
-  transition: .2s;
-  border: dashed 1px #fff;
-}
-
-.circle {
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #FFD22E;
-  animation: move 2s infinite;
-}
-
-.delay2s {
-  animation-delay: 2s;
+.wrapper {
+  margin-left: 35%;
+  font-size: 60px;
+  animation: Hello .5s infinite ease-in-out;
 }
 @keyframes flash {
-  to {
-    color: red;
+  from {
+    transform: translateX(0);
   }
- }
-  h1 {
-    font-size: 32px;
-    animation: .3s flash infinite ease-in-out;
-}
+  50% {
+    transform: translateX(940px);
+  }
+  100% {
+    transform: translateX(0);
+   }
+  }
+  .scuare {
+    margin-top: 4%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: blue;
+    animation: 2s flash infinite ease-in-out;
+  }
+  @keyframes box {
+    from {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(0);
+     }
+    }
+  .box {
+    margin-top: 100px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: red;
+    animation: 2s box infinite ease-in-out;
+  }
+  @keyframes oren {
+    from {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(0);
+     }
+    }
+  .oren {
+    margin-top: 100px;
+    position:  absolute;
+    width: 80px;
+    height: 80px;
+    background: #ffa500;
+    animation: 2s orenes infinite ease-in-out;
+  }
